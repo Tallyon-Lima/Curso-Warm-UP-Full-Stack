@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 70px;
+    background-color: #001e2b;
+    cursor: default;
+    user-select: none;
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4%;
+    background-color: #001e2b;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.header-icon {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.navigation-list li a {
+    text-decoration: none;
+    color: #cfd8dc;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.navigation-list li a:hover {
+    color: #00ed64;
+    border-bottom: 2px solid #00ed64;
+}
+
+/* ================= GRID BACKGROUND ================= */
+
+.grid-background {
+    width: 100%;
+    height: 650px;
+    border-radius: 0 0 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #011720;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+.intro-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: xx-large;
+    border-bottom: 2px solid transparent;
+    transition: color 1s ease, border-bottom 1s ease;
+}
+
+.intro-left h1:hover {
+    color: #00ed64;
+    border-bottom: 2px solid #00ed64;
+    transition: color 1s ease, border-bottom 1s ease;
+}
+
+.intro-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    padding-right: 5%;
+    color: #ffffff;
+    font-size: larger;
+    gap: 1%;
+}
+
+.intro-right b {
+    color: #00ed64;
+}
+
+/* ================= MIND MAP ================= */
+
+.mind-map {
+    width: 100%;
+    margin: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mind-map-title {
+    color: #00ed64;
+    margin: 30px 0;
+    font-size: xx-large;
+}
+
+.mind-map-title:hover {
+    color: #7CFF00;
+    border-bottom: 2px solid #7CFF00;
+}
+
+.mind-map-image-box {
+    width: 90%;
+    padding: 2vw 3%;
+    background-color: #011720;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mind-map-image-box img {
+    border-radius: 15px;
+}
+
+.lesson-1 {
+    width: 100%;
+    height: 650px;
+    background-color: #011720;
+    margin: 3vh 0 0 0;
+    display: flex;
+    border-radius: 5% 5% 0 0;
+}
+
+.lesson-1-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+.glow-text {
+    font-size: 48px;
+    font-weight: 700;
+    transition: color 1s ease, border-bottom 1s ease;
+    border-bottom: 2px solid transparent;
+    background: linear-gradient(90deg,
+            #7CFF00,
+            #00FF88,
+            #7CFF00);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 8px rgba(124, 255, 0, 0.6),
+        0 0 16px rgba(0, 255, 136, 0.5),
+        0 0 32px rgba(0, 255, 136, 0.3);
+}
+
+.glow-text:hover {
+    transition: color 1s ease, border-bottom 1s ease;
+    color: #00ed64;
+    border-bottom: 2px solid #00ed64;
+}
+
+.lesson-1-description {
+    width: 90%;
+    padding: 0 5%;
+    color: #ffffff;
+    font-size: larger;
+}
+
+.btn-more {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: color 1s ease, border-bottom 1s ease;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background-color: transparent;
+    transition: color 1s ease, border-bottom 1s ease;
+    border: none;
+    border-bottom: 2px solid #00ed64;
+    color: #00ed64;
+}
+
+.lesson-1-right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 32px;
+    transition: transform 0.4s ease;
+}
+
+.carousel-card {
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    padding: 24px;
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.carousel-btn {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ed64;
+    color: #001e2b;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.carousel-btn.left {
+    left: 40px;
+}
+
+.carousel-btn.right {
+    right: 40px;
+}
+
+.lesson-1-grid-cards {
+    width: 100%;
+    height: 650px;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    background-color: #ffffff;
+}
+
+.lesson-1-grid-title{
+    width: 100%;
+    text-align: start;
+    color: #001e2b;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.cards-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 7%;
+    padding: 0%;
+}
+
+.info-card {
+    height: 160px;
+    padding: 20px;
+    width: 320px;
+
+    background-color: #011720;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid rgba(0, 237, 100, 0.15);
+    box-shadow:
+        0 0 18px rgba(0, 237, 100, 0.08);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 25px rgba(0, 237, 100, 0.25),
+        0 0 60px rgba(0, 237, 100, 0.12);
+}
+
+.info-card h3 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.card-btn {
+    align-self: flex-start;
+
+    padding: 8px 16px;
+    border-radius: 20px;
+
+    background-color: transparent;
+    color: #00ed64;
+
+    border: 1px solid #00ed64;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #00ed64;
+    color: #001e2b;
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 640px;
+    padding: 32px 36px;
+
+    background-color: #011720;
+    border-radius: 20px;
+
+    position: relative;
+
+    border: 1px solid rgba(0, 237, 100, 0.25);
+    box-shadow:
+        0 0 25px rgba(0, 237, 100, 0.15),
+        0 0 60px rgba(0, 237, 100, 0.05);
+
+    animation: modal-fade-in 0.35s ease;
+}
+
+#modal-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ed64;
+}
+
+#modal-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cfd8dc;
+}
+
+.close-button {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #cfd8dc;
+
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.close-button:hover {
+    color: #00ed64;
+    transform: scale(1.1);
+}
+
+@keyframes modal-fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.92) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

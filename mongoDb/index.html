@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de MongoDB</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icons/mondoDb.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+        <div class="header-title">
+            <img src="./images/icons/mondoDb.png" width="36" class="header-icon">
+            <h1 class="site-title">Curso de MongoDB</h1>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li><a href="#introduction">Introdução</a></li>
+                <li><a href="#mind-map">Mapa Mental</a></li>
+                <li><a href="#lesson-1">Aula 1</a></li>
+                <li><a href="#lesson-2">Aula 2</a></li>
+                <li><a href="#lesson-3">Aula 3</a></li>
+                <li><a href="#lesson-4">Aula 4</a></li>
+                <li><a href="#lesson-5">Aula 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= INTRO ================= -->
+
+    <div class="grid-background" id="introduction">
+        <div class="intro-container">
+            <div class="intro-left">
+                <h1>Curso de MongoDB</h1>
+            </div>
+
+            <div class="intro-right">
+                <p>
+                    Esse site foi desenvolvido para auxiliar no aprendizado do banco de dados NoSQL MongoDB.
+                    Aqui você encontrará uma série de aulas que cobrem desde os conceitos básicos até mais avançados.
+                    Seguindo os conteúdos do curso de:
+                    <b>MongoDB: Conhecendo um banco de dados NoSQL</b>
+                </p>
+            </div>
+        </div>
+
+        <img src="./images/dash_mongo_db.avif" width="80%">
+    </div>
+
+    <!-- ================= MAPA MENTAL ================= -->
+
+    <div class="mind-map" id="mind-map">
+        <h1 class="mind-map-title">Mapa Mental</h1>
+
+        <div class="mind-map-image-box">
+            <img src="./images/mapa_mental.png" width="100%">
+        </div>
+    </div>
+
+    <!-- ================= AULA 1 ================= -->
+
+    <div class="lesson-1" id="lesson-1">
+        <div class="lesson-1-left">
+            <h1 class="glow-text">Aula 1 - NoSQL</h1>
+            <p class="lesson-1-description">
+                Por que utilizar o NoSQL para aplicações escaláveis e de alta performance?
+            </p>
+            <button class="btn-more" onclick="assembleModalDescription('moreNoSql')">Saiba Mais...</button>
+        </div>
+
+        <div class="lesson-1-right">
+            <section class="carousel-section">
+                <div class="carousel">
+                    <div class="carousel-track">
+
+                        <div class="carousel-card">
+                            <img src="./images/cards_aula_1/card_1.png" alt="">
+                            <h3>Maior Armazenamento</h3>
+                            <p>
+                                Em casos de diversos usuários, o NoSQL permite armazenar grandes volumes de dados de
+                                forma mais eficiente. Como o exemplo de empresa de streaming de vídeos, no qual os
+                                usuários acabam gerando muitos dados simultaneamente.
+                            </p>
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="./images/cards_aula_1/card_2.png" alt="">
+                            <h3>Maior Desempenho</h3>
+                            <p>
+                                Com o NoSQL, é possível obter um desempenho superior em operações de leitura e escrita
+                                em
+                                comparação com os bancos de dados relacionais tradicionais.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="lesson-1-grid-cards">
+        <h2 class="lesson-1-grid-title">
+            Mais sobre o NoSQL
+        </h2>
+        <section class="cards-section">
+            <div class="cards-grid">
+                <div class="info-card">
+                    <h3>NoSQL</h3>
+                    <button class="card-btn">Ler mais</button>
+                </div>
+
+                <div class="info-card">
+                    <h3>MongoDB Atlas</h3>
+                    <button class="card-btn">Ler mais</button>
+                </div>
+
+                <div class="info-card">
+                    <h3>Escalabilidade</h3>
+                    <button class="card-btn">Ler mais</button>
+                </div>
+
+                <div class="info-card">
+                    <h3>Documentos</h3>
+                    <button class="card-btn">Ler mais</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ================= Aula 2 ================ -->
+
+    <!-- ================= Modal ================= -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text">
+            </p>
+        </div>
+</body>
+
+</html>
