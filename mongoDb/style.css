@@ -532,7 +532,82 @@ body {
     background-color: #f5f9fa;
 }
 
+.lesson-2 {
+    width: 100%;
+    height: 650px;
+    border-top: 1px solid #00121a;
+    padding-top: 5vh;
+    display: flex;
+    background-color: #ffffff;
+}
 
+.lesson-2-container-intro {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 0 5%;
+}
+
+.lesson-2-container-intro-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.lesson-2-container-intro-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #00684a;
+}
+
+.lesson-2-container-intro-left h3{
+    font-weight: 400;
+    color: #001e2b;
+}
+
+.lesson-2-container-intro-left p{
+    width: 100%;
+    text-align: start;
+    color: #001e2b;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.lesson-2-box-mongodb-primary-btn {
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    background-color: #00ed64;
+    color: #001e2b;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-2-box-mongodb-primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 18, 176, 0.35);
+}
+
+
+.lesson-2-container-intro-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+}
 
 
 
@@ -600,19 +675,6 @@ body {
     color: #00ed64;
     transform: scale(1.1);
 }
-
-@keyframes modal-fade-in {
-    from {
-        opacity: 0;
-        transform: scale(0.92) translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
-}
-
 
 
 /* ================= FOOTER ================= */
