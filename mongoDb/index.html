@@ -112,30 +112,76 @@
         <section class="cards-section">
             <div class="cards-grid">
                 <div class="info-card">
-                    <h3>NoSQL</h3>
-                    <button class="card-btn">Ler mais</button>
+                    <h3>O que é NoSQL?</h3>
+                    <button class="card-btn" onclick="assembleModalDescription('whatNoSql')">Ler mais</button>
                 </div>
 
                 <div class="info-card">
-                    <h3>MongoDB Atlas</h3>
-                    <button class="card-btn">Ler mais</button>
+                    <h3>BD Relacionais vs BD Não Relacionais</h3>
+                    <button class="card-btn" onclick="assembleModalDescription('relationalVsNonRelational')">Ler
+                        mais</button>
                 </div>
 
                 <div class="info-card">
-                    <h3>Escalabilidade</h3>
-                    <button class="card-btn">Ler mais</button>
+                    <h3>Tipos de BD NoSql</h3>
+                    <button class="card-btn" onclick="assembleModalDescription('typesOfNoSql')">Ler mais</button>
                 </div>
 
                 <div class="info-card">
-                    <h3>Documentos</h3>
-                    <button class="card-btn">Ler mais</button>
+                    <h3>Tipo de MongoDB</h3>
+                    <button class="card-btn" onclick="assembleModalDescription('mongodb')">Ler mais</button>
                 </div>
             </div>
         </section>
     </div>
+    <section class="lesson-1-box-mongodb">
+        <h1 class="lesson-1-box-mongodb-title">Conhecendo o MongoDB</h1>
+        <div class="lesson-1-box-mongodb-container">
+            <div class="lesson-1-box-mongodb-main-card">
+                <div class="lesson-1-box-mongodb-main-card-container">
 
+                    <span class="lesson-1-box-mongodb-position">5º BD mais utilizado</span>
 
-    <!-- ================= Aula 2 ================ -->
+                    <h2>Utiliza o Formato de Documento</h2>
+
+                    <p>
+                        Utilizando o formato de documento, que são armazenados dentro de coleções. Esses documentos,
+                        internamente, têm uma estrutura bem semelhante ao JSON...
+                    </p>
+
+                    <button class="lesson-1-box-mongodb-primary-btn"
+                        onclick="assembleModalDescription('moreMongodbMainCard')">Ler Mais</button>
+                </div>
+                <img src="./images/more-mongodb.avif" width="54%">
+            </div>
+            <div class="lesson-1-box-mongodb-side-card">
+                <span class="lesson-1-box-mongodb-badge-light">MAIS INFORMAÇÕES</span>
+
+                <ul class="lesson-1-box-mongodb-info-list">
+                    <li>
+                        <span class="lesson-1-box-mongodb-dot"></span>
+                        Documento: Reestruturação de dados.
+                        <span class="arrow" onclick="assembleModalDescription('moreMongodbMainCard')">›</span>
+                    </li>
+                    <li>
+                        <span class="lesson-1-box-mongodb-dot"></span>
+                        Replicação: Cópias de dados em múltiplos servidores.
+                        <span class="arrow" onclick="assembleModalDescription('moreMongodbMainCard')">›</span>
+                    </li>
+                    <li>
+                        <span class="lesson-1-box-mongodb-dot"></span>
+                        Cluster: Capacidade de distribuir dados em múltiplos servidores.
+                        <span class="arrow" onclick="assembleModalDescription('moreMongodbMainCard')">›</span>
+                    </li>
+                    <li>
+                        <span class="lesson-1-box-mongodb-dot"></span>
+                        Oper Source, Distribuição Gratuita, Comunidade Ativa e Atlas.
+                        <span class="arrow" onclick="assembleModalDescription('moreMongodbMainCard')">›</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <!-- ================= Modal ================= -->
     <div id="modal" class="modal">
@@ -145,6 +191,51 @@
             <p id="modal-text">
             </p>
         </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer-container">
+
+            <div class="site-footer-brand">
+                <img src="./images/icons/mondoDb.png" width="32">
+                <h3>Curso de MongoDB</h3>
+                <p>
+                    Conteúdo educacional voltado para aprendizado de NoSQL e MongoDB,
+                    com foco em aplicações modernas e escaláveis.
+                </p>
+            </div>
+
+            <div class="site-footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#introduction">Introdução</a></li>
+                    <li><a href="#mind-map">Mapa Mental</a></li>
+                    <li><a href="#lesson-1">Aula 1</a></li>
+                    <li><a href="#lesson-2">Aula 2</a></li>
+                    <li><a href="#lesson-3">Aula 3</a></li>
+                    <li><a href="#lesson-4">Aula 4</a></li>
+                    <li><a href="#lesson-5">Aula 5</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer-links">
+                <h4>Conteúdo</h4>
+                <ul>
+                    <li>NoSQL</li>
+                    <li>MongoDB</li>
+                    <li>Documentos</li>
+                    <li>Cluster</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="site-footer-bottom">
+            <span>© 2026 · Curso de MongoDB</span>
+            <span>Desenvolvido por Tallyon</span>
+        </div>
+    </footer>
+
 </body>
 
 </html>

@@ -75,8 +75,6 @@ body {
     border-bottom: 2px solid #00ed64;
 }
 
-/* ================= GRID BACKGROUND ================= */
-
 .grid-background {
     width: 100%;
     height: 650px;
@@ -304,7 +302,7 @@ body {
 
 .lesson-1-grid-cards {
     width: 100%;
-    height: 650px;
+    height: auto;
     padding: 40px 5%;
     display: flex;
     flex-direction: column;
@@ -325,6 +323,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .cards-grid {
@@ -387,6 +386,157 @@ body {
     background-color: #00ed64;
     color: #001e2b;
 }
+
+
+.lesson-1-box-mongodb {
+    width: 100%;
+    padding: 80px 6%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.lesson-1-box-mongodb-title {
+    font-size: 42px;
+    font-weight: 500;
+    color: #001e2b;
+    margin-bottom: 48px;
+}
+
+.lesson-1-box-mongodb {
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-1-box-mongodb-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lesson-1-box-mongodb-main-card {
+    background: linear-gradient(135deg, #001e2b, #00121a);
+    border-radius: 24px;
+    padding: 40px;
+    color: #ffffff;
+    width: 63%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.lesson-1-box-mongodb-main-card-container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 1%;
+}
+
+.lesson-1-box-mongodb-position{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #00ed64;
+    margin-bottom: 16px;
+}
+
+.lesson-1-box-mongodb-main-card h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.lesson-1-box-mongodb-main-card p {
+    max-width: 420px;
+    line-height: 1.6;
+    color: #c7d2d9;
+    margin-bottom: 32px;
+}
+
+.lesson-1-box-mongodb-primary-btn {
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: #00ed64;
+    color: #001e2b;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-1-box-mongodb-primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 237, 100, 0.35);
+}
+
+.lesson-1-box-mongodb-side-card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid #00121a;
+    width: 35%;
+}
+
+.lesson-1-box-mongodb-badge-light {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #00684a;
+    margin-bottom: 24px;
+}
+
+.lesson-1-box-mongodb-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lesson-1-box-mongodb-info-list li {
+    display: flex;
+    align-items: center;
+    align-items: center;
+
+    padding: 14px 0;
+    border-bottom: 1px solid #e6eef1;
+
+    font-size: 15px;
+    color: #001e2b;
+    gap: 12px;
+    
+}
+
+.lesson-1-box-mongodb-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #00684a;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.arrow {
+    color: #00684a;
+    margin-left: auto;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+    right: 0;
+}
+
+.arrow:hover {
+    background-color: #f5f9fa;
+}
+
+
+
+
+
+
 
 /* ================= MODAL ================= */
 
@@ -461,4 +611,74 @@ body {
         opacity: 1;
         transform: scale(1) translateY(0);
     }
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+    width: 100%;
+    background-color: #001e2b;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 80px;
+}
+
+.site-footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 5%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.site-footer-brand h3 {
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.site-footer-brand p {
+    color: #b0bec5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.site-footer-links h4 {
+    color: #00ed64;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.site-footer-links ul {
+    list-style: none;
+}
+
+.site-footer-links li {
+    margin-bottom: 10px;
+    color: #cfd8dc;
+    font-size: 14px;
+}
+
+.site-footer-links a {
+    text-decoration: none;
+    color: #cfd8dc;
+    transition: color 0.2s ease;
+}
+
+.site-footer-links a:hover {
+    color: #00ed64;
+}
+
+.site-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+    color: #90a4ae;
 }
